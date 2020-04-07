@@ -1,0 +1,31 @@
+		:root {
+	    --main-bg: #fff;
+	    --keycolor-bg: #333;
+	    --keycolor-color: #fff;
+		}
+		* {margin: 0; padding: 0; font-family: sans-serif; list-style: none; text-decoration: none; text-transform: uppercase; transition: all .3s;}
+		html {line-height: 1.15; -webkit-text-size-adjust: 100%; -webkit-tap-highlight-color: transparent;}
+		body {overflow-wrap: break-word; overflow-x: hidden; background-color: var(--main-bg);}
+		h1, h2, h3 {font-weight: bold;}
+		div {display: block;}
+		#main {padding: 20px;}
+		#innerheader {background-color: var(--keycolor-bg);}
+		#innerheader {height: 50px; max-height: 50px; line-height: 50px;}
+		#navlinksA {background-color: #111;}
+		#navlinksA, #navlinks a {display: block; padding: 12px; color: white; font-size: 22px;}
+		#navlinks a {margin: 2px 0; background-color: #222; font-size: 18px;}
+		#navlinks a:hover {background-color: #333;}
+		#innerheader #showmenu, #searcherA {float: left; overflow: hidden; line-height: 50px; color: white;}
+		#searcherA {float: right;}
+		#innerheader [class*=fa-] {margin-right: 0; width: 2.5em; text-align: center; font-size: 25px; display: block;}
+		#searcher {position: fixed;  width: 30%; left: 4rem;}
+		#showmenu, #searcherA {cursor: pointer;}
+		.basic {width: 20%; position: fixed; left: 0; top: 0; height: 100%; background-color: #191919; overflow-y: auto; opacity: 0;}
+		.is-active {opacity: 1; transform: translate3d(0,0,0);}
+		.if-is-active {transform: translateX(20%);}
+		@media only screen and (max-width: 1100px) and (min-width: 5px) {
+			.basic {width: 200px !important;}
+			.if-is-active {transform: translateX(200px) !important;}
+		}
+		input[type="text"] {width: calc(100% - 20px); padding: 5px 10px; border-radius: 50px; border: 0.5px solid #D4D4D4; outline: none;}
+		/* ah */
